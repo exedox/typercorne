@@ -102,8 +102,15 @@
         P2: P2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(T) &kp H &kp E &kp N2 &kp S &kp P &kp E &kp C &kp T &kp R &kp U &kp M &kp EXCL>;
+            bindings = <&kp LS(T) &kp H &kp E &kp NUMBER_3 &kp S &kp P &kp E &kp C &kp T &kp R &kp U &kp M &kp EXCL>;
             label = "P2";
+        };
+
+        bit: bit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(D) &kp N1 &kp G &kp N1 &kp M &kp N0 &kp N &kp N1 &kp S &kp T &kp H &kp E &kp B &kp E &kp S &kp T &kp EXCL>;
+            label = "BIT";
         };
     };
 
@@ -121,7 +128,7 @@
 &kp TAB    &kp Q  &kp W  &kp E      &kp R           &kp T        &kp Y           &kp U  &kp I       &kp O    &kp P     &kp BSPC
 &kp LCTRL  &kp A  &kp S  &kp D      &kp F           &kp G        &kp H           &kp J  &kp K       &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z  &kp X  &kp C      &kp V           &kp B        &kp N           &kp M  &kp COMMA   &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-                         &kp TILDE  &lt 1 LEFT_GUI  &kp SPACE    &mt LALT ENTER  &mo 2  &kp LA(F4)
+                         &kp GRAVE  &lt 1 LEFT_GUI  &kp SPACE    &mt LALT ENTER  &mo 2  &kp LA(F4)
             >;
 
             sensor-bindings =
