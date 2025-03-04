@@ -114,6 +114,14 @@
             bindings = <&kp LS(D) &kp N1 &kp G &kp N1 &kp M &kp N0 &kp N &kp N1 &kp S &kp T &kp H &kp E &kp B &kp E &kp S &kp T &kp EXCL>;
             label = "BIT";
         };
+
+        mo: move {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp M &kp O &kp V &kp E &kp RET>;
+            label = "MOVE";
+            tap-ms = <1>;
+        };
     };
 
     keymap {
@@ -150,7 +158,7 @@
             bindings = <
 &trans     &kp N1        &kp NUMBER_2  &kp N3        &kp N4        &kp N5          &kp NUMBER_6  &kp N7          &kp N8          &kp N9        &kp N0           &studio_unlock
 &trans     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp F12       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &ctrlaltdel
-&kp LSHFT  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6        &kp F7          &kp F8          &kp F9        &kp F10          &kp F11
+&kp LSHFT  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6        &mo 1           &kp F8          &kp F9        &kp F10          &kp F11
                                        &kp LGUI      &trans        &kp SPACE       &kp RET       &trans          &kp RALT
             >;
 
