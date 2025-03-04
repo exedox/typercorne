@@ -90,6 +90,7 @@
             #binding-cells = <0>;
             bindings = <&kp LC(LA(DEL))>;
             label = "CTRLALTDEL";
+            tap-ms = <0>;
         };
 
         P1: P1 {
@@ -97,6 +98,7 @@
             #binding-cells = <0>;
             bindings = <&kp LS(T) &kp H &kp E &kp N1 &kp S &kp P &kp E &kp C &kp T &kp R &kp U &kp M &kp EXCL>;
             label = "P1";
+            tap-ms = <1>;
         };
 
         P2: P2 {
