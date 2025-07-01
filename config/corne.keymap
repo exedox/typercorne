@@ -104,8 +104,9 @@
         P2: P2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(T) &kp H &kp E &kp NUMBER_5 &kp S &kp P &kp E &kp C &kp T &kp R &kp U &kp M &kp EXCL>;
+            bindings = <&kp LS(T) &kp H &kp E &kp NUMBER_6 &kp S &kp P &kp E &kp C &kp T &kp R &kp U &kp M &kp EXCL>;
             label = "P2";
+            tap-ms = <1>;
         };
 
         bit: bit {
