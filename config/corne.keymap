@@ -82,6 +82,26 @@
             bindings = <&kp LG(LS(RIGHT))>;
             key-positions = <0 11>;
         };
+
+        copycad {
+            bindings = <&copycad>;
+            key-positions = <6 7>;
+        };
+
+        move {
+            bindings = <&mov>;
+            key-positions = <30 31>;
+        };
+
+        trim {
+            bindings = <&trim>;
+            key-positions = <18 19>;
+        };
+
+        tor {
+            bindings = <&tori>;
+            key-positions = <19 20>;
+        };
     };
 
     macros {
@@ -114,6 +134,7 @@
             #binding-cells = <0>;
             bindings = <&kp LS(D) &kp N1 &kp G &kp N1 &kp M &kp N0 &kp N &kp N1 &kp S &kp T &kp H &kp E &kp B &kp E &kp S &kp T &kp EXCL>;
             label = "BIT";
+            tap-ms = <1>;
         };
 
         mov: mov {
@@ -121,6 +142,31 @@
             #binding-cells = <0>;
             bindings = <&kp M &kp O &kp V &kp E &kp RET>;
             label = "MOV";
+            tap-ms = <1>;
+        };
+
+        tori: tori {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp O &kp R &kp I &kp E &kp N &kp T &kp RET>;
+            label = "TORI";
+            tap-ms = <1>;
+            wait-ms = <0>;
+        };
+
+        copycad: copycad {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp C &kp O &kp P &kp Y &kp RET>;
+            label = "COPYCAD";
+            tap-ms = <1>;
+        };
+
+        trim: trim {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp R &kp I &kp M &kp RET>;
+            label = "TRIM";
             tap-ms = <1>;
         };
     };
