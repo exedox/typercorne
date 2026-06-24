@@ -12,6 +12,6 @@ manifest:
       import: app/west.yml
     - name: nice-view-zinogre                 #new entry
       remote: exedox                       #new entry
-      revision: main                      #new entry
+      revision: part                      #new entry
   self:
     path: config
